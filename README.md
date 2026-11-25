@@ -13,3 +13,9 @@ The entry: a single joke about office life, setup and turn, punchline last.
 ## The line
 
 > Someone keeps stealing my lunch from the shared fridge, so I labelled it 'Dave's' — nobody has touched it in three weeks, including Dave.
+
+## How it runs
+
+`main.py` writes the joke to `/output/entry.txt`. Before writing, it enforces
+the sealed 1–200 character gate, raising a `ValueError` if the line falls
+outside it. The line is 137 characters.
